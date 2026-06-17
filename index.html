@@ -1,60 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>To-Do List Generator — Free Printable PDF | MicroPlan Studio</title>
-
-    <meta
-      name="description"
-      content="Generate a clean, printable to-do list PDF in seconds. Choose your number of tasks and download instantly."
-    />
-
-    <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="To-Do List Generator — Free Printable PDF"
-    />
-    <meta
-      property="og:description"
-      content="Create a simple, printable to-do list PDF in seconds."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://todo.microplanstudio.com" />
-    <meta
-      property="og:image"
-      content="https://todo.microplanstudio.com/assets/og-image.png"
-    />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="To-Do List Generator — Free Printable PDF"
-    />
-    <meta
-      name="twitter:description"
-      content="Create a simple, printable to-do list PDF in seconds."
-    />
-    <meta
-      name="twitter:image"
-      content="https://todo.microplanstudio.com/assets/og-image.png"
-    />
-
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
-    <!-- Schema -->
-    <script type="application/ld+json">
-      {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   To-Do List Generator — Free Printable PDF | MicroPlan Studio
+  </title>
+  <meta content="Generate a printable to-do list PDF with tasks, priorities, and notes." name="description"/>
+  <!-- Open Graph -->
+  <meta content="To-Do List Generator — Free Printable PDF" property="og:title"/>
+  <meta content="Create a simple, printable to-do list PDF in seconds." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://todo.microplanstudio.com" property="og:url"/>
+  <meta content="https://todo.microplanstudio.com/assets/og-image.png" property="og:image"/>
+  <!-- Twitter -->
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="To-Do List Generator — Free Printable PDF" name="twitter:title"/>
+  <meta content="Create a simple, printable to-do list PDF in seconds." name="twitter:description"/>
+  <meta content="https://todo.microplanstudio.com/assets/og-image.png" name="twitter:image"/>
+  <link href="https://microplanstudio.com/generator-styles.css" rel="stylesheet"/>
+  <link href="assets/favicon.png" rel="icon" type="image/png"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js">
+  </script>
+  <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5861292512968172">
+  </script>
+  <!-- Schema -->
+  <script type="application/ld+json">
+   {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "To-Do List Generator",
         "applicationCategory": "Productivity",
         "operatingSystem": "Web",
-        "description": "Generate a free printable to-do list PDF in seconds.",
+        "description": "Generate a printable to-do list PDF with tasks, priorities, and notes.",
         "url": "https://todo.microplanstudio.com",
         "image": "https://todo.microplanstudio.com/assets/og-image.png",
         "author": {
@@ -62,104 +40,118 @@
           "name": "MicroPlan Studio"
         }
       }
-    </script>
-  </head>
-
-  <body>
-    <header>
-      <img src="assets/logo.png" class="logo" alt="MicroPlan Studio" />
-    </header>
-
-    <main>
-      <h1>To-Do List Generator</h1>
-      <p>Create a clean, printable to-do list in seconds.</p>
-
-      <h2>Create Your To-Do List</h2>
-
-      <!-- Controls -->
-      <div class="controls">
-        <label>
-          Number of tasks:
-          <input type="number" id="taskCount" min="5" max="40" value="15" />
-        </label>
-
-        <button id="generateBtn">Generate</button>
-      </div>
-
-      <h2>Preview</h2>
-      <div id="previewArea"></div>
-
-      <button id="downloadBtn" class="hidden">Download PDF</button>
-
-      <!-- Upsell -->
-      <div class="upsell-banner">
-        <div class="upsell-inner">
-          <img
-            src="assets/SystemCraftLogo.png"
-            alt="SystemCraft AI Studio"
-            class="upsell-logo"
-          />
-          <span>
-            Want premium planners? Visit
-            <a
-              href="https://www.etsy.com/shop/SystemCraftAIStudio"
-              target="_blank"
-            >
-              SystemCraft AI Studio
-            </a>
-            for beautifully designed, customizable planner templates!
-          </span>
-        </div>
-      </div>
-
-      <!-- Related Tools -->
-      <section class="related-tools">
-        <h2>More Free Planner Tools</h2>
-        <ul class="related-grid">
-          <!-- 4 related tools -->
-          <li><a href="https://daily.microplanstudio.com">Daily Planner</a></li>
-          <li>
-            <a href="https://weekly.microplanstudio.com">Weekly Planner</a>
-          </li>
-          <li>
-            <a href="https://timeblock.microplanstudio.com"
-              >Time Block Planner</a
-            >
-          </li>
-          <li>
-            <a href="https://project.microplanstudio.com">Project Planner</a>
-          </li>
-
-          <!-- 2 cross-category tools -->
-          <li><a href="https://mood.microplanstudio.com">Mood Tracker</a></li>
-          <li><a href="https://meals.microplanstudio.com">Meal Planner</a></li>
-        </ul>
-        <a href="https://microplanstudio.com">All Planner Tools</a>
-      </section>
-
-      <!-- SEO Text -->
-      <section class="seo-text">
-        <h2>To-Do List Generator — Free Printable PDF</h2>
-        <p>
-          This free to-do list generator helps you create a clean, minimal task
-          list in seconds. Perfect for work, school, home, and personal
-          productivity.
-        </p>
-        <p>No signup required — just generate, download, and print.</p>
-      </section>
-    </main>
-
-    <footer>© 2026 MicroPlan Studio — Free planner tools</footer>
-    <div class="legal-links">
-      <a href="https://microplanstudio.com/privacy-policy.html"
-        >Privacy Policy</a
-      >
-      •
-      <a href="https://microplanstudio.com/terms-of-service.html"
-        >Terms of Service</a
-      >
+  </script>
+ </head>
+ <body>
+  <header>
+   <img alt="MicroPlan Studio" class="logo" src="assets/logo.png"/>
+  </header>
+  <main>
+   <h1>
+    To-Do List Generator
+   </h1>
+   <p>
+    Create a clean, printable task list.
+   </p>
+   <h2>
+    Create Your To-Do List
+   </h2>
+   <div class="controls">
+    <label>
+     Number of tasks:
+     <input id="taskCount" max="40" min="5" type="number" value="15"/>
+    </label>
+   </div>
+   <button id="generateBtn">
+    Generate
+   </button>
+   <h2>
+    Preview
+   </h2>
+   <div id="previewArea">
+   </div>
+   <button class="hidden" id="downloadBtn">
+    Download PDF
+   </button>
+   <div class="upsell-banner">
+    <div class="upsell-inner">
+     <img alt="SystemCraft AI Studio" class="upsell-logo" src="assets/SystemCraftLogo.png"/>
+     <span>
+      Want premium planners? Visit
+      <a href="https://www.etsy.com/shop/SystemCraftAIStudio" target="_blank">
+       SystemCraft AI Studio
+      </a>
+      for beautifully designed, customizable planner templates!
+     </span>
     </div>
-
-    <script src="script.js"></script>
-  </body>
+   </div>
+   <section class="related-tools">
+    <h2>
+     More Free Planner Tools
+    </h2>
+    <ul class="related-grid">
+     <li>
+      <a href="https://daily.microplanstudio.com">
+       Daily Planner
+      </a>
+     </li>
+     <li>
+      <a href="https://weekly.microplanstudio.com">
+       Weekly Planner
+      </a>
+     </li>
+     <li>
+      <a href="https://timeblock.microplanstudio.com">
+       Time Block Planner
+      </a>
+     </li>
+     <li>
+      <a href="https://project.microplanstudio.com">
+       Project Planner
+      </a>
+     </li>
+     <li>
+      <a href="https://mood.microplanstudio.com">
+       Mood Tracker
+      </a>
+     </li>
+     <li>
+      <a href="https://meals.microplanstudio.com">
+       Meal Planner
+      </a>
+     </li>
+    </ul>
+    <div class="all-tools-wrapper" style="text-align: center; margin-top: 12px">
+     <a class="all-tools-link" href="https://microplanstudio.com">
+      All Planner Tools
+     </a>
+    </div>
+   </section>
+   <section class="seo-text">
+    <h2>
+     Free To-Do List Generator
+    </h2>
+    <p>
+     This free to-do list generator helps you organize tasks with priorities and notes.
+    </p>
+    <p>
+     Perfect for productivity, work, and home planning. No signup required.
+    </p>
+   </section>
+  </main>
+  <footer>
+   © 2026 MicroPlan Studio — Free planner tools
+  </footer>
+  <div class="legal-links">
+   <a href="https://microplanstudio.com/privacy-policy.html">
+    Privacy Policy
+   </a>
+   •
+   <a href="https://microplanstudio.com/terms-of-service.html">
+    Terms of Service
+   </a>
+  </div>
+  <script src="script.js">
+  </script>
+ </body>
 </html>
